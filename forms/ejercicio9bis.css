@@ -1,0 +1,37 @@
+#form {
+    width: 800px;
+    height:600px;
+}
+
+fieldset {
+    float:left;
+}
+
+h1, h2 {
+    border: 1px solid red;
+}
+
+/* label, input {
+    display: block;
+    float: left;
+    clear: both;
+}
+*/
+fieldset * {
+    display:block;
+    float: left;
+    clear:both;
+}
+.right {
+    float:right;
+    }
+
+label {
+    font-size: 0.7em;
+    color: lightgrey;
+}
+
+input[type="text"]{
+    border: 0.1em solid black;
+    background-color: rgb(247, 242, 235);
+}

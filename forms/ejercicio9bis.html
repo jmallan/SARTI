@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/ejercicio9bis.css" title="style">
+    <title>Document</title>
+</head>
+<body>
+    <div id="form">
+        <h1>Formulario de alta</h1>
+        <fieldset id="name">
+            <h2>Nombre y apellidos<span class="asterisco">*</span></h2>
+            <input id="nombre" name="nombre" type="text" maxlength="80" size="30" />
+            <label for=#nombre>Nombre</label>
+            <input id="1apellido" name="1_apellido" type="text" maxlength="90" size="50" />
+            <label for=#1apellido>Primer Apellido</label>
+            <input id="2apellido" name="2_apellido" type="text" maxlength="90" size="50" />
+            <label for=#2apellido >Segundo apellido</label>
+        </fieldset>
+       <fieldset id="direccion" class="right">
+           <h2>Dirección<span class="asterisco">*</span></h2>
+            <input id="direccion" name="direccion" type="text" maxlength="80" size="50" />
+            <label for=#direccion>Calle, número, piso, puerta</label>
+            <input id="cp" name="cp" type="text" maxlength="5" size="20" />
+            <label for=#cp>Código postal</label>
+            <input id="municipio" name="municipio" type="text" maxlength="50" size="30" />
+            <label for=#municipio>Municipio</label>
+            <select name="provincia" id="provincia">    
+                <option value="Barcelona">Barcelona</option>
+                <option value="Girona">Girona</option>
+                <option value="Lleida">Lleida</option>
+                <option value="Tarragona">Tarragona</option>                    
+            </select>
+            <label for=#provincia>Provincia</label>
+            <select name="país" id="pais">
+                    <option value="España">España</option>
+                    <option value="Grecia">Grecia</option>
+                    <option value="Portugal">Portugal</option>                   
+            </select>
+            <label for=#pais>País</label>
+       </fieldset>
+       <fieldset id="mail">
+           <h2>Email</h2>
+           <input name="email" type="text" maxlength="90" size="50" />
+       </fieldset>
+       <fieldset id="telf" class="right">
+           <h2>Teléfono<span class="asterisco">*</span></h2>
+           <input id="fijo" name="fijo" type="text" maxlength="80" size="40" />
+            <label for=#fijo>Fijo</label>
+            <input id="movil" name="móvil" type="text" maxlength="80" size="40" />
+            <label for=#movil>Móvil</label>
+       </fieldset>
+       <hr>
+       <fieldset id="validar">
+           <input type="button" value="Darme de alta"/>
+       </fieldset>
+    </div>
+</body>
+</html>
