@@ -17,14 +17,19 @@ h1, h2 {
     clear: both;
 }
 */
+
 fieldset * {
     display:block;
     float: left;
-    clear:both;
+    /*clear:both;*/
 }
-.right {
+/*.right {
     float:right;
-    }
+    }*/
+
+#mail {
+    clear: both;
+}    
 
 label {
     font-size: 0.7em;
