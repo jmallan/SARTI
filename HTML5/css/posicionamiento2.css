@@ -1,4 +1,4 @@
-html, body {height: 98%;
+html, body {height: 97%;
             width: 98%;
             vertical-align: middle;
         }
@@ -7,8 +7,8 @@ header, nav, article, aside, footer {
     border: 2px solid black;
     }
 
-#cabecera { height: 13%;
-            width: 98%;
+header { height: 13%;
+            width: 100%;
             margin-bottom: 2%;
             background-color: rgb(248, 9, 9);
             align-items: center;
@@ -16,53 +16,51 @@ header, nav, article, aside, footer {
             justify-content: center;
         }
 
-#menu { float: left;
-        height: 30%;
-        width: 23%;
+nav { float: left;
+        height: 5%;
+        width: 100%;
         background-color: aqua;
         align-items: center;
         display: flex;
         justify-content: center;
     }
 
-#contenido {
-            float: right;
+article {
+            float: left;
             height:60%;
             width:70%;
-            margin-right: 1.65%;
-
+            margin-top: 1.65%;
             }
 
-#principal {
-    float: left;
-    width: 65%;
-    height: 98%;
+section {
     background-color: bisque;
     overflow: hidden;
+    height:100%;
 }
 
-#lateral {
+aside {
     float: right;
     width:25%;
-    height:98%;
+    height:50%;
     align-items: center;
-        display: flex;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.65%;
 }
 
 
-#principal img {float: left;
+section img {float: left;
                 margin:2%;
             }
 
-#principal p {text-align: justify;
+section p {text-align: justify;
                 margin: 1%;
              }
 
-#pie {  
+footer {  
         float: left;
         height:13%;
-        width: 98%;
+        width: 100%;
         margin-top: 5%;
         background-color: coral;
         align-items: center;
