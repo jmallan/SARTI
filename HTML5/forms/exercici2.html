@@ -11,6 +11,14 @@
     <div id="form">
         <form>
             <fieldset>
+                <label for="name">Name:</label>
+                <input id="name" type="text" autofocus placeholder="Introduce tu nombre" required autocomplete="off">
+                <label for="mail">E-mail:</label>
+                <input id="mail" type="email" required>
+                <label for="url">URL:</label>
+                <input id="url" type="url">
+                <label for="search">Search:</label>
+                <input id="search" type="search">
                 <label for="date">Date:</label>
                 <input id="date" type="date">
                 <label for="time">Time:</label>
@@ -23,14 +31,22 @@
                 <input id="week" type="week">
                 <label for="number">Number:</label>
                 <input id="number" type="number">
-                <label for
-                <label for="mail">E-mail:</label>
-                <input id="mail" type="email">
-                <label for="url">URL:</label>
-                <input id="url" type="url">
-                <label for="search">Search:</label>
-                <input id="search" type="search">
-                
+                <label for="range">Range:</label>
+                <input id="range" type="range">
+                <label for="tel">Telf:</label>
+                <input id="tel" type="tel">
+                <label for="color">Color:</label>
+                <input id="color" type="color">
+                <label for="provincia">Choose:</label>
+                <input id="provincia" type="text" list="lst1">
+                <datalist id="lst1">
+                    <option label="Barcelona" value="barcelona">
+                    <option label="Girona" value="girona">
+                    <option label="Lleida" value="lleida">
+                    <option label="Tarragona2" value="tarragona">
+                </datalist>
+                <progress max="100" value=""></progress>
+                <input type="submit">
             </fieldset>
         </form>
     </div>
