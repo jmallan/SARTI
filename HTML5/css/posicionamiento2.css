@@ -1,0 +1,71 @@
+html, body {height: 98%;
+            width: 98%;
+            vertical-align: middle;
+        }
+
+header, nav, article, aside, footer {
+    border: 2px solid black;
+    }
+
+#cabecera { height: 13%;
+            width: 98%;
+            margin-bottom: 2%;
+            background-color: rgb(248, 9, 9);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+#menu { float: left;
+        height: 30%;
+        width: 23%;
+        background-color: aqua;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+#contenido {
+            float: right;
+            height:60%;
+            width:70%;
+            margin-right: 1.65%;
+
+            }
+
+#principal {
+    float: left;
+    width: 65%;
+    height: 98%;
+    background-color: bisque;
+    overflow: hidden;
+}
+
+#lateral {
+    float: right;
+    width:25%;
+    height:98%;
+    align-items: center;
+        display: flex;
+        justify-content: center;
+}
+
+
+#principal img {float: left;
+                margin:2%;
+            }
+
+#principal p {text-align: justify;
+                margin: 1%;
+             }
+
+#pie {  
+        float: left;
+        height:13%;
+        width: 98%;
+        margin-top: 5%;
+        background-color: coral;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
