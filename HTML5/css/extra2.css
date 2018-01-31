@@ -10,9 +10,15 @@ nav {
     background-color: yellow;
 }
 
-nav a[atributo$=".com"]{
+nav a[href$=".com"]{
     text-decoration-line: none;
     margin-left: 5px;
+}
+
+nav a[href$=".es"]{
+    text-decoration-line: none;
+    margin-left: 5px;
+    color: red;
 }
 
 #greenDot {
@@ -29,6 +35,10 @@ nav a[atributo$=".com"]{
     color: blue;
 }
 
+#greendot p:nth-child(even){
+    background-color: aquamarine;
+}
+
 section {
     margin: 5px; 
     background-color: whitesmoke;
@@ -39,6 +49,15 @@ section {
     text-align: justify;
 }
 
+section p::first-line{
+    font-style: italic;
+}
+
+section p::first-letter {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
 img.right, img.left {
     padding: 5px;
 }
@@ -47,7 +66,7 @@ img.right, img.left {
     clear: both;
 }
 
-#pie {
+footer {
     clear: both;
     float: right;
     width: 800px;
@@ -57,7 +76,7 @@ img.right, img.left {
     padding: 5px;
 }
 
-#pie p strong {
+footer p strong {
     color: blue;
 }
 
