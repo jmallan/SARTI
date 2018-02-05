@@ -1,0 +1,118 @@
+body {
+    background-color: pink;
+}
+
+nav {
+    float: left;
+    width: 216px;
+    margin-top: 5px;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+nav a[href$=".com"]{
+    text-decoration-line: none;
+    margin-left: 5px;
+}
+
+nav a[href$=".es"]{
+    text-decoration-line: none;
+    margin-left: 5px;
+    color: red;
+}
+
+#greenDot {
+    padding-left: 5px;
+    margin-left: 5px;
+    float: left;
+    width: 563px;
+    margin-top: 5px;
+    border: 4px dotted blue;
+    background-color: greenyellow;
+}
+
+#greenDot h1 {
+    color: blue;
+}
+
+#greendot p:nth-child(even){
+    background-color: aquamarine;
+}
+
+section {
+    margin: 5px; 
+    background-color: whitesmoke;
+    float: left;
+    width: 372px;
+    padding: 8px;
+    border: 2px solid blue;
+    text-align: justify;
+}
+
+section p::first-line{
+    font-style: italic;
+}
+
+section p::first-letter {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+img.right, img.left {
+    padding: 5px;
+}
+
+#marca {
+    clear: both;
+}
+
+footer {
+    clear: both;
+    float: right;
+    width: 800px;
+    background-color: rgb(236, 122, 145);
+    border: 5px dotted blue;
+    margin: 5px;
+    padding: 5px;
+}
+
+footer p strong {
+    color: blue;
+}
+
+#validat {
+    position: fixed;
+    top: 15px;
+    right: 5px;
+    background-color: blue;
+    height: 60px;
+    width: 800px;
+
+}
+
+#validat img {
+    float:right;
+    padding-top: 5px;
+}
+
+#validat p {
+    float: left;
+    color: white;
+    padding: 5px 5px;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.diari {
+    color: blue;
+}
+
+.offered {
+    color: red;
+}

@@ -1,0 +1,14 @@
+body {
+    width: 350px;
+}
+
+label {
+    float:left;
+    clear: left;
+    margin-bottom: 3%;
+}
+
+input, progress {
+    float: right;
+    clear:right;
+    }
