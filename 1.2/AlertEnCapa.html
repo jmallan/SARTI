@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="capaAlert">
+
+    </div>
+    <script>
+        function alertEnCapa(texto){
+            var capa=document.getElementById("capaAlert");
+            capa.insertAdjacentHTML('beforeend', "<br>"+texto);
+        }
+        function alertEnCapaConcreta(texto,capa){
+            var capa=document.getElementById(capa);
+            capa.insertAdjacentHTML('beforeend',"<br>"+texto);
+        }
+        
+    </script>
+</body>
+</html>

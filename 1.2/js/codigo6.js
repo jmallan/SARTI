@@ -8,6 +8,8 @@ var indexLetra= numDNI % 23;
 switch (numDNI > 0 && numDNI < 99999999) {
     case (true):
         var letra = letras[indexLetra];
+        /* versio dos de l'exercici 6
+        alert("Tu DNI es:" + numDNI + letra);*/
         if (letra == letraDNI){
             alert ("El número y la letra de DNI son correctos.");
         }
