@@ -7,7 +7,7 @@ for (n-1; n>=0; n--){
     }
     else {
         var ok = confirm(n);
-        if (ok==false){
+        if (!ok){
         alert("Has cancel·lat el compte enrere.");
         break;
         }

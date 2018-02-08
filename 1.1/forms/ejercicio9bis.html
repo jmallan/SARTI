@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/ejercicio9bis.css" title="style">
+    <script src="codigo9bis.js"></script>
+	<noscript>El teu navegador no soporta JavaScript. PRINGAO!!!!!</noscript>
     <title>Document</title>
 </head>
 <body>
     <div id="form">
+        <form name="alta" action="http://daw.iesjoaquimmir.cat/sarti.php" method="post" enctype="multipart/form-data">
         <h1>Formulario de alta</h1>
         <fieldset id="name">
             <legend>Nombre y apellidos<span class="rojo">*</span></legend>
@@ -55,8 +58,9 @@
        </fieldset>
        <hr>
        <fieldset id="validar">
-           <input type="button" value="Darme de alta &rarr;"/>
+            <input id="alta" type="button" value="Alta" onclick= "enviar();"/>
        </fieldset>
+    </form>
     </div>
 </body>
 </html>
