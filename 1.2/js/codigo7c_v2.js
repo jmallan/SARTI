@@ -1,13 +1,19 @@
 var num = prompt("Numero per calcul·lar el factorial:");
-var factor = 1;
-var rep = num;
 
 function factorial(rep) {
-        if (rep != 0){
-            factor *= rep--;
-            factorial(rep);
-        }
-    return factor;
+    if (rep > 1){
+            rep *= factorial(--rep);
+    }
+    return rep;
 }
 
-alert(factorial(rep));
+
+
+function factorialJavi(numero){
+    return numero>1?numero*factorialJavi(numero-1):1;
+}
+
+
+
+alert("El factorial de "+num+" és "+ factorial(num)+".");
+alert("El factorial de "+num+" és "+ factorialJavi(num)+".");
