@@ -8,12 +8,12 @@ function cargaEventos(){
 
 function anade() {
 	var elLi = document.createElement("li");
-	var text = document.createTextNode("New");
+	var text = document.createTextNode(prompt("Text que vols introduir: "));
 	elLi.appendChild(text);
 	document.getElementById("lista").appendChild(elLi);
-	var numLi = document.getElementsByTagName("li").length-1;
-	if(numLi >= 0){
-		document.querySelector("input[value='Eliminar elemento']").style.display="initial";
+	var numLi = document.getElementsByTagName("li").length;
+	if(numLi > 0){
+		document.querySelector("input[value='Eliminar elemento']").style.display="inline";
 	}
 }
 
@@ -21,7 +21,8 @@ function elimina() {
 	var numLi = document.getElementsByTagName("li").length-1;
 	var removeLi = document.getElementsByTagName("li")[numLi];
 	removeLi.parentNode.removeChild(removeLi);
-	if(numLi <= 0){
+	console.log("Numero linia: " + numLi);
+	if(numLi == 0){
 		document.querySelector("input[value='Eliminar elemento']").style.display="none";
 	}
 }

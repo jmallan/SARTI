@@ -21,5 +21,6 @@ function modifica(){
     this.previousSibling.previousSibling.style.display="block";
     this.className="visible";
     this.innerHTML = "Ocultar contenido";
+    
     }
 }
