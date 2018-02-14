@@ -16,14 +16,16 @@
 				mensajeTot += bsp;
   				// Numero de enlaces que apuntan a http://prueba
 				mensajeTot += document.querySelectorAll("a[href='http://prueba']").length;
-
+				mensajeTot += bsp;
   				// Numero de enlaces del tercer párrafo
-  	
-	  
+				//mensajeTot +=  (document.getElementsByTagName("p")[2]).getElementsByTagName("a").length;
+				mensajeTot += document.querySelectorAll("p:nth-of-type(3) > a").length;
+					  
 				//ens posicionem al div id="informacion"
 				var info = document.getElementById("informacion");
 				//injecta mensajeTot al html
 				info.innerHTML = mensajeTot;
+				var ventana = window.open("pagina.html","nombrepagina","width=500,height=200");
 			}
 		</script>
 	</head>
