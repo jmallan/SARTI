@@ -8,7 +8,7 @@ label {
     margin-bottom: 3%;
 }
 
-input, progress {
+input, progress,textarea {
     float: right;
     clear:right;
     }
