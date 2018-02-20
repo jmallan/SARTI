@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    width:800px;
+    margin:auto;
+}
+
+#visor {
+    width:800px;
+    height:auto;
+}
+
+#visor img {
+    width: 640px;
+    height: 439.641px;
+}
+
+#scroll {
+    float:left;
+    width: 800px;
+}
+
+#scroll img{
+    width:152px;
+    height: 104.406px;
+    margin: 10px 5px;
+}
