@@ -47,7 +47,7 @@
                     <option label="Tarragona2" value="tarragona">
                 </datalist>
                 <label for="coment">Comentarios</label>
-                <textarea id="coment" name="comentarios" type="textarea" width="50" height="30" onkeydown="return limita(10);" onkeyup="return limita(10);"></textarea>
+                <textarea id="coment" name="comentarios" type="textarea" width="50" height="30" onkeydown="limita(10, event);" onkeyup="return limita(10);"></textarea>
                 <label for="caracters">Nº caracters:</label>
                 <textarea id="caracters" width="2" height="1"></textarea>
                 <progress max="100" value=""></progress>
