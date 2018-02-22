@@ -1,3 +1,22 @@
+$(document).ready(function(){
+    for (i=0; i< $("a").length; i++){
+        $("a").click(modifica);
+    };
+});
+
+function modifica(){
+    if ($(this).text() == "Ocultar contenidos"){
+        $(this).prev().hide();
+        $(this).text("Mostrar contenidos");
+    }
+    else {
+        $(this).prev().show();
+        $(this).text("Ocultar contenidos");
+    }
+
+}
+
+/*
 window.addEventListener('load', cargaEventos);
 
 function cargaEventos(){
@@ -23,3 +42,4 @@ function modifica(){
     this.innerHTML = "Ocultar contenidos";
     }
 }
+*/

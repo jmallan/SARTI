@@ -1,3 +1,26 @@
+$(document).ready(function(){
+	$("input[value='Añadir elemento']").click(anade);
+	$("input[value='Eliminar elemento']").click(elimina);
+});
+
+function anade(){
+	var text = prompt("text que vols introduir: ");
+	$("#lista").append("<li>"+text);
+	var numLi = $("#lista li").length;
+	if (numLi > 0){
+		$("input[value='Eliminar elemento']").css("display", "inline");
+	}
+}
+
+function elimina(){
+	$($("li")[$("#lista li").length-1]).remove();
+	if($("#lista li").length == 0){
+		$("input[value='Eliminar elemento']").css("display", "none");
+	}
+}
+
+/*
+
 window.addEventListener('load', cargaEventos);
 
 function cargaEventos(){
@@ -21,8 +44,7 @@ function elimina() {
 	var numLi = document.getElementsByTagName("li").length-1;
 	var removeLi = document.getElementsByTagName("li")[numLi];
 	removeLi.parentNode.removeChild(removeLi);
-	console.log("Numero linia: " + numLi);
 	if(numLi == 0){
 		document.querySelector("input[value='Eliminar elemento']").style.display="none";
 	}
-}
+}*/
