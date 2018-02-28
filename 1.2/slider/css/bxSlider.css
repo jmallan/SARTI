@@ -1,0 +1,19 @@
+#slider {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+    padding: 0;
+    margin: auto;
+}
+#slider > div {
+    position:absolute;
+    top:0;
+    left:0;
+}
+#slider img {
+    width:500px;
+    min-height:300px;
+    margin:auto;
+    padding:auto;
+}
