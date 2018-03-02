@@ -1,0 +1,15 @@
+nav{
+    background-color: steelblue;
+}    
+.jumbotron{
+    background-color: green;
+    color: white;
+    margin-top:70px;
+}
+
+.btn-secondary{
+    background-color: rgb(30, 189, 99);
+    color: green;
+    border: none;
+    margin: 0px 3px;
+}
